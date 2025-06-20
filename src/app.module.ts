@@ -17,7 +17,7 @@ import { ConfigModule, ConfigService } from '@nestjs/config';
         port: Config.get('DB_PORT'),
         username: Config.get('DB_USER'),
         database: Config.get('DB_NAME'),
-        entities:[__dirname + '/**/**/*.entity{.ts,.js']
+        entities:[__dirname + '/**/entitys/*.entity{.ts,.js']
       })
     }),
     TaskModule,
